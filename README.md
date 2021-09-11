@@ -4,14 +4,14 @@
 
 ###usersテーブル 
 
-| Column    | Type       | Options            |
-| --------- | ---------- | ------------------ |
-| email     | string     | not null           |
-| password  | string     | not null           |
-| nickname  | string     | not null           |
-| name      | string     | not null           |
-| name_kana | string     | not null           |
-| position  | string     | not null           |
+| Column              | Type       | Options            |
+| ------------------- | ---------- | ------------------ |
+| email               | string     | not null           |
+| encrypted_password  | string     | not null           |
+| nickname            | string     | not null           |
+| name                | string     | not null           |
+| name_kana           | string     | not null           |
+| position            | string     | not null           |
 
 ### Association
 
