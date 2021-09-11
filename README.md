@@ -52,5 +52,5 @@
 ### Association
 
 - belongs_to :users
-- belongs_to :prototypes
+- belongs_to :displays
 <!-- 一対一 -->
