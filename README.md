@@ -1,24 +1,56 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+＃テーブル設計
 
-Things you may want to cover:
+###usersテーブル 
 
-* Ruby version
+| Column    | Type       | Options            |
+| --------- | ---------- | ------------------ |
+| email     | string     | not null           |
+| password  | string     | not null           |
+| nickname  | string     | not null           |
+| name      | string     | not null           |
+| name_kana | string     | not null           |
+| position  | string     | not null           |
 
-* System dependencies
+### Association
 
-* Configuration
+- has_many :comments
+- has_many :displays
 
-* Database creation
 
-* Database initialization
+###displaysテーブル
 
-* How to run the test suite
+| Column     | Type               | Options            |
+| -----------| ------------------ | ------------------ |
+| title      | text               | not null           |
+| explanation| text               | not null           |
+| category   | text               | not null           |
+| condition  | string             | not null           |
+| charge     | string             | not null           |
+| area       | string             | not null           |
+| days       | string             | not null           |
+| price      | string             | not null           |
+| image      | ActiveStorageで実装 |                    |
+| user       | references         |                    |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
+- has_many :comments
+- belong_to :users
+<!-- １対多数 -->
 
-* ...
+
+###commentsテーブル
+
+| Column    | Type        | Options    |
+|---------- | ------------| ---------- |
+| text      | text        | not null   |
+| user      | references  |            |
+| display   | references  |            |
+
+### Association
+
+- belongs_to :users
+- belongs_to :prototypes
+<!-- 一対一 -->
