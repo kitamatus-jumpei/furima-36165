@@ -58,18 +58,16 @@
 
 <!-- 一対一 -->
 
-###shipping_addressテーブル
+###shipping_addressesテーブル
 
 | Column           | Type        | Options       |
 |----------------- | ----------- | ------------- |
 | postal_code      | string      | null: false   |←ActiveHashを用いての実装
-| prefectures_id   | integer     | null: false   |
+| area_id          | integer     | null: false   |
 | municipalities   | string      | null: false   |
 | address          | string      | null: false   |
 | building         | string      | null: true    |
 | telephone        | string      | null: false   |
-| user             | references  | null false,foreign_key: true |
-| display          | references  | null false,foreign_key: true |
 | list             | references  | null false,foreign_key: true |
 
 ### Association
