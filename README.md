@@ -13,7 +13,7 @@
 | first_name          | string     | not null           |
 | family_name_kana    | string     | not null           |
 | first_name_kana     | string     | not null           |
-| birthday            | string     | not null           |
+| birthday            | date       | not null           |
 
 
 ### Association
@@ -39,7 +39,7 @@
 
 ### Association
 
-- has_one :lists
+- has_one :list
 - belong_to :user
 <!-- １対多数 -->
 
@@ -47,10 +47,6 @@
 
 | Column        | Type        | Options    |
 |-------------- | ------------| ---------- |
-| credit_card   | string      | not null   |
-| month         | string      | not null   |
-| year          | string      | not null   |
-| security_code | string      | not null   |
 | user          | references  | null false,foreign_key: true |
 | display       | references  | null false,foreign_key: true |
 
@@ -66,20 +62,18 @@
 
 | Column           | Type        | Options       |
 |----------------- | ----------- | ------------- |
-| postal_code_id   | string      | null: false   |←ActiveHashを用いての実装
-| prefectures_id   | string      | null: false   |
-| municipalities_id| string      | null: false   |
-| address_id       | string      | null: false   |
-| building_id      | string      | null: true    |
-| telephone_id     | string      | null: false   |
+| postal_code      | string      | null: false   |←ActiveHashを用いての実装
+| prefectures_id   | integer     | null: false   |
+| municipalities   | string      | null: false   |
+| address          | string      | null: false   |
+| building         | string      | null: true    |
+| telephone        | string      | null: false   |
 | user             | references  | null false,foreign_key: true |
 | display          | references  | null false,foreign_key: true |
 | list             | references  | null false,foreign_key: true |
 
 ### Association
 
-- belongs_to :user
-- belongs_to :display
 - belongs_to :list
 <!-- 一対一 -->
 
