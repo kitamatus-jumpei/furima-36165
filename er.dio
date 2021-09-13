@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="AScj28pv0M9ptoivCgs2" name="ページ1">
-        <mxGraphModel dx="930" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1149" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="7T5hVNqxdzm8Yb2DUQGD-0"/>
                 <mxCell id="7T5hVNqxdzm8Yb2DUQGD-1" parent="7T5hVNqxdzm8Yb2DUQGD-0"/>
@@ -33,19 +33,16 @@
                 <mxCell id="2" value="LISTSテーブル" style="text;strokeColor=#A50040;fillColor=#d80073;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
                     <mxGeometry x="70" y="420" width="290" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=-0.009;entryY=0.797;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=blockThin;endFill=1;" edge="1" parent="7T5hVNqxdzm8Yb2DUQGD-1" source="4" target="11">
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=-0.009;entryY=0.797;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=blockThin;endFill=1;" parent="7T5hVNqxdzm8Yb2DUQGD-1" source="4" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ol&gt;&lt;li&gt;user (references型）&lt;/li&gt;&lt;li&gt;display (references型）&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=#A50040;fillColor=#d80073;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
                     <mxGeometry x="70" y="460" width="320" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="shipping_addressesテーブル" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" vertex="1" parent="7T5hVNqxdzm8Yb2DUQGD-1">
+                <mxCell id="9" value="shipping_addressesテーブル" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
                     <mxGeometry x="530" y="400" width="330" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;" edge="1" parent="7T5hVNqxdzm8Yb2DUQGD-1" source="11" target="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="11" value="&lt;ol&gt;&lt;li&gt;&lt;span&gt;postal_code_id (string型, NULL: FALSE)&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;area_id&amp;nbsp; (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;municipalities_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;address_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;building_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;telephone_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;user (references型, NULL FALSE, FOREIGN_KEY: TRUE)&lt;/li&gt;&lt;li&gt;display (references型, NULL FALSE, FOREIGN_KEY: TRUE)&lt;/li&gt;&lt;li&gt;list (references型, NULL FALSE, FOREIGN_KEY: TRUE)&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontColor=#ffffff;" vertex="1" parent="7T5hVNqxdzm8Yb2DUQGD-1">
+                <mxCell id="11" value="&lt;ol&gt;&lt;li&gt;&lt;span&gt;postal_code_id (string型, NULL: FALSE)&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;area_id&amp;nbsp; (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;municipalities_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;address_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;building_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;telephone_id (string型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;list (references型, NULL FALSE, FOREIGN_KEY: TRUE)&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
                     <mxGeometry x="530" y="440" width="370" height="320" as="geometry"/>
                 </mxCell>
             </root>
