@@ -74,7 +74,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Days can't be blank")
       end
       it 'days_idが初期値では登録できない' do
-        @item.days_id = ''
+        @item.days_id = '1'
         @item.valid?
         expect(@item.errors.full_messages).to include("Days can't be blank")
       end
@@ -113,6 +113,11 @@ RSpec.describe Item, type: :model do
         @item.price = '10000000'
         @item.valid?
         expect(@item.errors.full_messages).to include('Price ¥300~¥9999999の範囲で入力してください')
+      end
+      it 'userが紐付いていなければ出品できない' do
+        @item.user = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include('User must exist')
       end
     end
   end
