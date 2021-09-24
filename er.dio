@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="AScj28pv0M9ptoivCgs2" name="ページ1">
-        <mxGraphModel dx="611" dy="260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="377" dy="128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="7T5hVNqxdzm8Yb2DUQGD-0"/>
                 <mxCell id="7T5hVNqxdzm8Yb2DUQGD-1" parent="7T5hVNqxdzm8Yb2DUQGD-0"/>
@@ -27,7 +27,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="1" value="&lt;ol&gt;&lt;li&gt;tatle (string型, NOT NULL)&lt;/li&gt;&lt;li&gt;explanation (text型, NOT NULL)&lt;/li&gt;&lt;li&gt;category_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;condition_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;charge_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;area_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;days_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;price (string型, NOT NULL)&lt;/li&gt;&lt;li&gt;image (ActiveStorageで実装）&lt;/li&gt;&lt;li&gt;user (references型, NULL FALSE, FOREIGN_KEY: TRUE）&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=#001DBC;fillColor=#0050ef;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
+                <mxCell id="1" value="&lt;ol&gt;&lt;li&gt;tatle (string型, NOT NULL)&lt;/li&gt;&lt;li&gt;explanation (text型, NOT NULL)&lt;/li&gt;&lt;li&gt;category_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;condition_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;charge_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;area_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;days_id (integer型, NULL: FALSE)&lt;/li&gt;&lt;li&gt;price (integer型, NOT NULL)&lt;/li&gt;&lt;li&gt;image (ActiveStorageで実装）&lt;/li&gt;&lt;li&gt;user (references型, NULL FALSE, FOREIGN_KEY: TRUE）&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=#001DBC;fillColor=#0050ef;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
                     <mxGeometry x="420" y="120" width="290" height="270" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="LISTSテーブル" style="text;strokeColor=#A50040;fillColor=#d80073;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" parent="7T5hVNqxdzm8Yb2DUQGD-1" vertex="1">
