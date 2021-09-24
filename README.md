@@ -22,7 +22,7 @@
 - has_many :displays
 
 
-###displaysテーブル
+###itemsテーブル
 
 | Column       | Type               | Options            |
 | -------------| ------------------ | ------------------ |
@@ -33,7 +33,7 @@
 | charge_id    | integer            | null: false        |
 | area_id      | integer            | null: false        |
 | days_id      | integer            | null: false        |
-| price        | string             | not null           |
+| price        | integer             | not null           |
 | image        | ActiveStorageで実装 |                    |
 | user         | references         | null false,foreign_key: true |
 
