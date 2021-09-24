@@ -1,5 +1,9 @@
 class ItemsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+
+
   def index
+
   end
 
   def new
@@ -7,9 +11,16 @@ class ItemsController < ApplicationController
   end
 
   def create
-   Item.create(item_params)
-  #  @item = item.find(params[:user_id])
-   @item.save
+   @item = Item.create(item_params)
+    # @item = item.find(params[:user_id])
+    # @item.save 
+    if @item.save
+      redirect_to root_path
+    else
+      render :new
+    end
+   #  ↑出品するボタンを押したときに、どこに遷移するかを記述する。
+
   end
 
   private
