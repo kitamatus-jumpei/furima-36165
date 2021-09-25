@@ -134,11 +134,10 @@
         <%= link_to items_index_path do %>
         <div class='item-img-content'>
           <%= image_tag item.image, class: "item-img" %>
-          <%# <%= image_tag 画像ファイルのパス ←こちらのメソッドで画像を表示できる。 %>
           
 
           <%# 商品が売れていればsold outを表示しましょう %>
-          <%# <% if （ここに条件文） %> 
+          <%# <% if （ここに条件文）商品購入機能実装の時に使用する記述 %> 
           <div class='sold-out'>
             <span>Sold Out!!</span>
           </div>
