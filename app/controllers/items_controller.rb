@@ -19,6 +19,10 @@ class ItemsController < ApplicationController
     #  ↑出品するボタンを押したときに、どこに遷移するかを記述する。
   end
 
+  def show
+    @item = Item.find(params[:id])
+  end
+
   private
 
   def item_params
