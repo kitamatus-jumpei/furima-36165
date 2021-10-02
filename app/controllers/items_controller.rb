@@ -21,11 +21,11 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-  end 
+  end
 
   def edit
     @item = Item.find(params[:id])
-     redirect_to new_user_session_path unless user_signed_in?
+    redirect_to new_user_session_path unless user_signed_in?
   end
 
   def update
@@ -35,7 +35,6 @@ class ItemsController < ApplicationController
     else
       render :edit
     end
-
   end
 
   private
