@@ -26,7 +26,7 @@ class ItemsController < ApplicationController
 
   def edit
     if current_user.id != @item.user_id
-      redirect_to '#' 
+      redirect_to items_index_path
     end  
   end
 
